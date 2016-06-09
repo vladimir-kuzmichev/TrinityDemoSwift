@@ -14,6 +14,7 @@
 		546488011D09D59100B60BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546487FD1D09D59100B60BF6 /* LaunchScreen.storyboard */; };
 		546488051D09D5B700B60BF6 /* GoogleBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 546488031D09D5B700B60BF6 /* GoogleBooks.xcdatamodeld */; };
 		546488081D09D63A00B60BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546488061D09D63A00B60BF6 /* Main.storyboard */; };
+		A463B56D1357013F3A12FBD1 /* Pods_TrinityDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897342D729BE38EEB90B2B49 /* Pods_TrinityDemoSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		546487FE1D09D59100B60BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546488041D09D5B700B60BF6 /* GoogleBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoogleBooks.xcdatamodel; sourceTree = "<group>"; };
 		546488071D09D63A00B60BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		897342D729BE38EEB90B2B49 /* Pods_TrinityDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrinityDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE380BB8E1D31859EAE332F /* Pods-TrinityDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrinityDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrinityDemoSwift/Pods-TrinityDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		EE5F702D1747B3D53FC81693 /* Pods-TrinityDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrinityDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrinityDemoSwift/Pods-TrinityDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A463B56D1357013F3A12FBD1 /* Pods_TrinityDemoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				546487D31D09C38600B60BF6 /* TrinityDemoSwift */,
 				546487D21D09C38600B60BF6 /* Products */,
+				C5A8659469D65D76549355B7 /* Pods */,
+				F6164409C5928D670DA0E42F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +181,23 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		C5A8659469D65D76549355B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAE380BB8E1D31859EAE332F /* Pods-TrinityDemoSwift.debug.xcconfig */,
+				EE5F702D1747B3D53FC81693 /* Pods-TrinityDemoSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6164409C5928D670DA0E42F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				897342D729BE38EEB90B2B49 /* Pods_TrinityDemoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546487E51D09C38600B60BF6 /* Build configuration list for PBXNativeTarget "TrinityDemoSwift" */;
 			buildPhases = (
+				BEFC13D390F25E741527A520 /* 📦 Check Pods Manifest.lock */,
 				546487CD1D09C38600B60BF6 /* Sources */,
 				546487CE1D09C38600B60BF6 /* Frameworks */,
 				546487CF1D09C38600B60BF6 /* Resources */,
+				A06749DBF693E49D66C07897 /* 📦 Embed Pods Frameworks */,
+				56286B3DB15535FE35CE946B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +266,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56286B3DB15535FE35CE946B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrinityDemoSwift/Pods-TrinityDemoSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A06749DBF693E49D66C07897 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrinityDemoSwift/Pods-TrinityDemoSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFC13D390F25E741527A520 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		546487CD1D09C38600B60BF6 /* Sources */ = {
@@ -361,6 +436,7 @@
 		};
 		546487E61D09C38600B60BF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE380BB8E1D31859EAE332F /* Pods-TrinityDemoSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrinityDemoSwift/Info.plist;
@@ -372,6 +448,7 @@
 		};
 		546487E71D09C38600B60BF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE5F702D1747B3D53FC81693 /* Pods-TrinityDemoSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrinityDemoSwift/Info.plist;
@@ -400,6 +477,7 @@
 				546487E71D09C38600B60BF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
