@@ -9,7 +9,7 @@
         <!--Books-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="BookListViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="BookListViewController" customModule="TrinityDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -55,7 +55,7 @@
         <!--Cart-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="CartViewController" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="CartViewController" customModule="TrinityDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -107,20 +107,20 @@
         <!--Book Table View Controller-->
         <scene sceneID="bmf-Rx-rdk">
             <objects>
-                <viewController id="fWi-m3-ze0" customClass="BookTableViewController" sceneMemberID="viewController">
+                <viewController id="fWi-m3-ze0" customClass="BookTableViewController" customModule="TrinityDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ge8-83-L2s"/>
                         <viewControllerLayoutGuide type="bottom" id="vUk-Ko-zMY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mew-RA-rwa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7xw-pP-DgU">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookCell" rowHeight="70" id="WMI-XX-TTb" customClass="BookCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookCell" rowHeight="70" id="WMI-XX-TTb" customClass="BookCell" customModule="TrinityDemoSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WMI-XX-TTb" id="nRS-WF-QTF">
@@ -158,7 +158,7 @@
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <state key="normal" title="Add to cart"/>
                                                     <connections>
-                                                        <action selector="cartBtnPressed:" destination="WMI-XX-TTb" eventType="touchUpInside" id="tbf-dd-ZHu"/>
+                                                        <action selector="cartBtnPressed:" destination="WMI-XX-TTb" eventType="touchUpInside" id="4zn-RB-khc"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -179,13 +179,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="authorsLbl" destination="f03-pk-632" id="ydC-xF-dJJ"/>
-                                            <outlet property="cartBtn" destination="Laf-Ly-gNJ" id="cUZ-Bf-0tA"/>
+                                            <outlet property="authorsLbl" destination="f03-pk-632" id="CIA-Ys-c50"/>
+                                            <outlet property="cartBtn" destination="Laf-Ly-gNJ" id="Yit-np-q5V"/>
                                             <outlet property="thumbnailView" destination="zIf-hM-WPS" id="S1S-6y-KJ0"/>
-                                            <outlet property="titleLbl" destination="2rf-C3-gcd" id="8W3-Tb-h8K"/>
+                                            <outlet property="titleLbl" destination="2rf-C3-gcd" id="QlE-dM-Dq1"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookDBCell" rowHeight="70" id="4Dc-su-cy4" customClass="BookCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookDBCell" rowHeight="70" id="4Dc-su-cy4" customClass="BookCell" customModule="TrinityDemoSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="98" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Dc-su-cy4" id="uyX-LK-woc">
@@ -260,7 +260,7 @@
         <!--Book Details View Controller-->
         <scene sceneID="ENQ-1Z-BcM">
             <objects>
-                <viewController id="rMM-Wf-nxw" customClass="BookDetailsViewController" sceneMemberID="viewController">
+                <viewController id="rMM-Wf-nxw" customClass="BookDetailsViewController" customModule="TrinityDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mDH-RA-Gmt"/>
                         <viewControllerLayoutGuide type="bottom" id="gOe-xS-KHa"/>
@@ -387,6 +387,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hI3-OC-c8h"/>
+        <segue reference="8Q2-F6-kcN"/>
     </inferredMetricsTieBreakers>
 </document>

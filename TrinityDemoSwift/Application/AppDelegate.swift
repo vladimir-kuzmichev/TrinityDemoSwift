@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MagicalRecord
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-		// Override point for customization after application launch.
+		
+		// Setup database
+		self.setupDB()
+		
+		// Initialize API client
+		GoogleBooksAPIClient.shared
+		
+		// Observe for an application error notification
+		NSNotificationCenter.defaultCenter().addObserverForName(kNotificationApplicationError, object: nil, queue: NSOperationQueue.mainQueue()) { (note: NSNotification) in
+			
+			let vc_ = ApplicationHelper.topmostViewController()
+			let info_ = note.userInfo
+			
+			if let vc = vc_, let info = info_ {
+				ApplicationHelper.showAlertWith(info[NSString.init(string: "error") as NSObject] as! NSError, onController: vc)
+			}
+			
+		}
+		
+		// Appearance
+		UITabBar.appearance().tintColor = UIColor.orangeColor()
+		UISearchBar.appearance().tintColor = UIColor.orangeColor()
+		
 		return true
 	}
 
@@ -39,8 +62,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func applicationWillTerminate(application: UIApplication) {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+		MagicalRecord.cleanUp()
 	}
 
-
+	// MARK: Setup
+	
+	private func setupDB() {
+		// Setup Core Data Stack with Magical Record
+		MagicalRecord.setupCoreDataStack()
+	}
+	
 }
 
