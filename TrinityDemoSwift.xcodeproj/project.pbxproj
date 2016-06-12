@@ -16,6 +16,7 @@
 		546488081D09D63A00B60BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546488061D09D63A00B60BF6 /* Main.storyboard */; };
 		5488A4D81D0AB2B4009604BF /* GoogleBooksAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488A4D71D0AB2B4009604BF /* GoogleBooksAPIClient.swift */; };
 		5488A4DA1D0AB8CE009604BF /* GoogleBooksResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488A4D91D0AB8CE009604BF /* GoogleBooksResponseSerializer.swift */; };
+		5488A4DC1D0AE9FA009604BF /* BooksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488A4DB1D0AE9FA009604BF /* BooksManager.swift */; };
 		54EAB2E81D09E1BC000B939D /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EAB2E71D09E1BC000B939D /* BookCell.swift */; };
 		54EAB2EA1D09E209000B939D /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EAB2E91D09E209000B939D /* BookTableViewController.swift */; };
 		54EAB2EC1D09E21B000B939D /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EAB2EB1D09E21B000B939D /* BookDetailsViewController.swift */; };
@@ -39,6 +40,7 @@
 		546488071D09D63A00B60BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		5488A4D71D0AB2B4009604BF /* GoogleBooksAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleBooksAPIClient.swift; sourceTree = "<group>"; };
 		5488A4D91D0AB8CE009604BF /* GoogleBooksResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleBooksResponseSerializer.swift; sourceTree = "<group>"; };
+		5488A4DB1D0AE9FA009604BF /* BooksManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksManager.swift; sourceTree = "<group>"; };
 		54EAB2E71D09E1BC000B939D /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		54EAB2E91D09E209000B939D /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 		54EAB2EB1D09E21B000B939D /* BookDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		546487ED1D09D3F800B60BF6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5488A4DB1D0AE9FA009604BF /* BooksManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				TargetAttributes = {
 					546487D01D09C38600B60BF6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H64TWKDM77;
 					};
 				};
 			};
@@ -359,6 +363,7 @@
 				5488A4DA1D0AB8CE009604BF /* GoogleBooksResponseSerializer.swift in Sources */,
 				54EAB2F21D09EBDC000B939D /* GoogleBooksAPI.swift in Sources */,
 				546487F51D09D52B00B60BF6 /* AppDelegate.swift in Sources */,
+				5488A4DC1D0AE9FA009604BF /* BooksManager.swift in Sources */,
 				54EAB2F61D09EE61000B939D /* ApplicationHelper.swift in Sources */,
 				54EAB2F01D09EB27000B939D /* Book.swift in Sources */,
 				54EAB2F41D09ED4C000B939D /* Errors.swift in Sources */,
@@ -481,6 +486,7 @@
 			baseConfigurationReference = DAE380BB8E1D31859EAE332F /* Pods-TrinityDemoSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TrinityDemoSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trinity.TrinityDemoSwift;
@@ -494,6 +500,7 @@
 			baseConfigurationReference = EE5F702D1747B3D53FC81693 /* Pods-TrinityDemoSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TrinityDemoSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trinity.TrinityDemoSwift;

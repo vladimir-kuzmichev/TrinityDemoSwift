@@ -11,5 +11,6 @@
 
 #import <MagicalRecord/MagicalRecord.h>
 #import <AFNetworking/AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #endif /* TrinityDemoSwift_Bridging_Header_h */

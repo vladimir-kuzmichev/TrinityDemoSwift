@@ -13,7 +13,7 @@ class BookCell: UITableViewCell {
 	@IBOutlet weak var thumbnailView: UIImageView!
 	@IBOutlet weak var titleLbl: UILabel!
 	@IBOutlet weak var authorsLbl: UILabel!
-	@IBOutlet weak var cartBtn: UIButton!
+	@IBOutlet weak var cartBtn: UIButton?
 	
 	@IBAction func cartBtnPressed(sender: AnyObject) {
 		if let btnPressed = self.cartBtnPressed {
@@ -42,9 +42,10 @@ class BookCell: UITableViewCell {
 	// MARK: UI
 	
 	private func setupUI() {
-		let viewLayer = self.cartBtn.layer
-		viewLayer.cornerRadius = 3
-		viewLayer.masksToBounds = true
+		if let viewLayer = self.cartBtn?.layer {
+			viewLayer.cornerRadius = 3
+			viewLayer.masksToBounds = true
+		}
 	}
 	
 }

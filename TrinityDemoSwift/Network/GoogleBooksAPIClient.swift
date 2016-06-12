@@ -88,8 +88,8 @@ public class GoogleBooksAPIClient: AFHTTPSessionManager {
 		}
 		
 		// Modify request params (append the API key)
-		let params = parameters ?? [:]
-		params.setValue(KAPIKey, forKey: kAPIKeyKey)
+		let params = NSMutableDictionary(dictionary: parameters ?? [:])
+		params[kAPIKeyKey] = KAPIKey
 		
 		print("Request URL: \(reqUrl)")
 		print("Request parameters: \(params)")
