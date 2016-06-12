@@ -75,7 +75,7 @@ class BooksManager {
 	
 	// MARK: Parsing
 	
-	func parseBookData(data: NSDictionary?) -> Book? {
+	private func parseBookData(data: NSDictionary?) -> Book? {
 		
 		guard let bookData = data else { return nil }
 		
